@@ -1,0 +1,78 @@
+.project{
+    background-color:#fff;
+    padding-bottom: 4rem;
+    height: 17rem;
+    width: 100%;
+    margin-top: 5rem;
+    position: relative;
+}
+.project h2{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: inherit;
+    text-align: left;
+    margin-top:  1rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    background-color: var(--primery);
+    display: inline-block;
+    padding: 10px 2rem 10px 2rem;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+.container_pro{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+}
+.box_pro{
+    width: 18rem;
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+}
+.overlay{
+    width: 18rem;
+    height:20rem ;
+    background-color: var(--bg);
+    position: absolute;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    right: 0%;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+}
+.overlay:hover{
+    transform: translateX(-100%);
+}
+.box_pro img{
+    width: 100%;
+    height: 100%;
+}
+.box_pro span{
+    position: absolute;
+    z-index: 8;
+    color: #fff;
+    font-size: 1rem;
+    left: 0%;
+    top: 0%;
+    display: inline-block;
+    background-color: var(--primery);
+    font-family: "lora", serif;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:767px) {
+    .project{
+        height: auto;
+    }
+    
+}

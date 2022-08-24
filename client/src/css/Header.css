@@ -1,0 +1,117 @@
+.header{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: var(--bg);
+    color: white;
+    margin-bottom: -5px;
+    border-radius: ;
+    border-radius: 0% 0% 50% 50% / 0% 0% 20% 20% ;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 100%;
+}
+.btn_hero{
+    font-size: 15px;
+    padding: 7px 15px 7px 15px;
+}
+.btn_hero a{
+    text-decoration: none;
+    color: #fff;
+}
+.l_hero{
+    padding: 2rem;
+    width: 25rem;
+    height: auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+}
+
+.l_hero h1{
+    font-family: "Lora", serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+    justify-content: baseline;
+    flex-wrap: wrap;
+}
+.icons{
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid var(--secondary);
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    padding: 5px;
+}
+.icons:hover{
+    background-color: var(--primery);
+    color: white;
+}
+
+.her_span h2{
+    font-size: 1.3rem;
+    font-family: "Poppins" sans-serif;
+    color: #fff;
+    font-weight: 400;
+    transform: translateX(-100vw);
+    animation: l_r_ 1s ease-in-out forwards;
+}
+.her_span b{
+    font-family: "Lora" , sans-serif;
+    font-size: 1.3rem;
+    color: var(--primery);
+}
+
+.l_hero p{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Poppins" sans-serif;
+    transform: translateX(-150%);
+    animation: l_r_ 1s 1s ease-in-out forwards;
+
+}
+
+/* ********rightside*********** */
+
+.r_hero img{
+    border-radius: 100%;
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    transform: translateX(130%) translateY(-30%) rotate(360deg);
+    animation: r_l_rotete 1s 1.4s ease-in-out forwards;
+}
+
+@media screen and (max-width:767px ) {
+    .hero{
+        height: auto;
+        padding-top:2rem;
+    }
+
+    .r_hero img{
+        height: 13rem;
+        width: 13rem;
+    }
+
+    
+    
+}

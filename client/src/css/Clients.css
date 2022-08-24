@@ -1,0 +1,68 @@
+.cleint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg);
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    margin-top: 7rem;
+
+}
+.mySwiper{
+    background-color: var(--secondary);
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    margin-top: 4rem;
+    
+}
+.cleint h1{ 
+    color: var(--secondary);
+    font-weight: 500;
+    font-family: "Lora", serif;
+}
+.cli_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 25rem;
+    height: 20rem;
+    margin-top:3rem;
+    background-color: transparent;
+    box-shadow: 10px 12px 25px 2px rgba(0, 0, 0, 0.5);
+}
+.cli_box img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+}
+.cli_detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cli_detail>:nth-child(1) {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Poppins" sans-serif;
+}
+.cli_detail>:nth-child(2) {
+    font-family: "Poppins" sans-serif;
+    font-size: .75rem;
+    color: #fff;
+    font-weight: 300;
+
+}
+
+@media screen and (max-width:767px) {
+    .mySwiper{
+        width: 90vw;
+    }
+    
+}

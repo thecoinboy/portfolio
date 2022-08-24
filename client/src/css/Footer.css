@@ -1,0 +1,33 @@
+.footer{
+    background-color: var(--bg);
+    height: 20rem;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer span{
+    font-size: 13px;
+}
+
+.fotter_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.foot_icons{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.footer p{
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.446);
+    margin-top: 1rem;
+}

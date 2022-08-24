@@ -1,0 +1,97 @@
+.nav{
+    display: flex;
+    padding: 1.2rem 4rem .4rem 4rem;
+    align-items: center;
+    position: relative;
+    background-color: var(--bg);
+    color: #fff;
+}
+.logo{
+    flex: 30%;
+}
+.logo a{
+    font-size: 1.3rem;
+    font-family: "Lora", sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.list{
+    flex: 70%;
+}
+.list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    z-index: 99;
+}
+.list ul a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin: 0px 20px 0px 20px;
+}
+
+.list ul a::after{
+    content: '';
+    top: 27px;
+    left: 0;
+    height:3px;
+    width: 110%;
+    position: absolute;
+    align-items: center;
+    align-self: center;
+    transition: all 1s;
+}
+.list ul a:hover::after{
+    
+    background-color: var(--primery);
+}
+
+.toggler{
+    display: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor:pointer;
+}
+
+@media screen and (max-width:767px ) {
+    .nav{
+        padding: 1.5rem;
+    }
+    .list ul{      
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--bg); 
+        top: 100%;
+        width: 100vw;
+        left: 0;
+        height: 60vh;
+        overflow: hidden;
+        transition: .3s all;
+    }
+    .toggler{
+        display: block;
+    }
+    
+    .list ul a{
+        width: 100%;
+    }
+    .toggle{
+        left: -100% !important;
+    }
+    .list{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

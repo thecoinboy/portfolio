@@ -1,0 +1,91 @@
+.service{
+    padding: 1rem 3rem 1rem 3rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.service_title{
+    display: flex;
+    flex-direction: column;
+
+}
+.service_title>:nth-child(1){
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    font-family: "Lora", serif;
+}
+.service_title>:nth-child(2){
+    text-transform: capitalize;
+    font-family: "Lora", serif;
+    font-size: 14px;
+    font-family: "Poppins" sans-serif;
+    font-weight: 400;
+    border-top: 2px solid var(--primery);
+    color: var(--primery);
+    align-self: flex-end;
+    padding-top: 7px;
+}
+
+/* box**************** */
+
+.service_contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+.ser_box{
+    width: 16rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--bg);
+    overflow: hidden;
+    border-radius: 18px;
+    transition: .5s all;
+    border-radius: 50% 50% 50% 50% / 20% 20% 20% 20%  ;
+}
+
+.ser_box:hover{
+    background-color: var(--secondary);
+}
+
+.ser_box:hover>.ser_button{
+    background-color: var(--bg);
+    box-shadow: -2px 3px 8px 2px var(--primery);
+}
+
+.ser_box:hover>:nth-child(1){
+    color: var(--primery);
+}
+.ser_box>:nth-child(1){
+    font-size: 35px;
+    color: var(--secondary);
+}
+.ser_box>:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.ser_box>:nth-child(3){
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.ser_button{
+    width: 8rem;
+    padding: 8px;
+}
