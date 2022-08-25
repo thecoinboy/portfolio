@@ -10,13 +10,18 @@ app.use(bodyParser.json())
 
 app.use("/", router)
 
+const PORT = process.env.PORT || 5000;
+
+// deployment
 
 if(process.env.NODE_ENV == "production"){
     app.use(express.static("client/build"))
 }
 
-app.listen(process.env.PORT | 5000, () => {
-    console.log(`Server is running on: ${process.env.PORT}`)
+
+
+app.listen( PORT, () => {
+    console.log(`Server is running on: ${PORT}`)
 })
 
 
